@@ -1,4 +1,4 @@
-database: hsqldb
+database: mysql
 
 spring:
   datasource:
@@ -16,6 +16,8 @@ spring:
       cache: true
     cache:
       period: 86400
+  profiles:
+    include: mysql
 
 logging:
   pattern:
